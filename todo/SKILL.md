@@ -46,7 +46,7 @@ The sub-agent should return the drafted phase text and any suggestions about exi
 ### Step 2: Add the phase to PLAN.md
 
 Read the current `PLAN.md`. Insert the new phase at the **top** of the "Next Up" section (first in
-the queue). If `PLAN.md` doesn't exist yet, create it with "Next Up", "Completed", and
+the queue). If `PLAN.md` doesn't exist yet, create it with "Completed", "Next Up", and
 "Future Work" sections, and place the new phase under "Next Up".
 
 If the sub-agent suggested modifications to other existing phases, present those suggestions to the
