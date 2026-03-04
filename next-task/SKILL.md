@@ -1,12 +1,12 @@
 ---
-name: next-phase
-description: Execute the next phase of the PLAN.md — plan, implement, test, commit, and update PLAN.md.
+name: next-task
+description: Execute the next task/phase of the PLAN.md — plan, implement, test, commit, and update PLAN.md.
 disable-model-invocation: true
 ---
 
-## Next Phase Workflow
+## Next Task Workflow
 
-You are driving the project forward one phase at a time. Follow these steps in order.
+You are driving the project forward one task (or phase) at a time. Follow these steps in order.
 
 **Context survival note:** Entering plan mode clears your conversation context. To preserve
 continuity, the plan you write in step 2 MUST include the full post-plan workflow (steps 3-7
@@ -15,13 +15,13 @@ after exiting plan mode, the remaining instructions come with it.
 
 ### Step 1: Determine what to work on
 
-Read `PLAN.md` at the project root. Identify the first incomplete phase under "Next Up" (or, if
-all "Next Up" items are done, look at "Future Work"). Summarize the phase to the user in 2-3
+Read `PLAN.md` at the project root. Identify the first incomplete task under "Next Up" (or, if
+all "Next Up" items are done, look at "Future Work"). Summarize the task to the user in 2-3
 sentences and confirm it's what they want to work on. If the user provides arguments via
 `$ARGUMENTS`, treat that as guidance on what to work on instead. If the "Next Up" and "Future Work"
 sections are empty, or don't exist, re-organize the PLAN.md as such.
 
-If the next step is ambiguous or there are open questions listed in PLAN.md that block this phase,
+If the next step is ambiguous or there are open questions listed in PLAN.md that block this task,
 ask the user to resolve them before proceeding.
 
 ### Step 2: Plan
@@ -60,14 +60,14 @@ Stage and commit the changes with a semantic commit message. Do not add any attr
 anyone, including yourself. Follow the project's commit message style (see `git log --oneline`).
 
 ### Update PLAN.md
-Read `PLAN.md`. Move the completed phase from "Next Up" to "Completed" with a summary of what
-was done (matching the style of existing completed phases). Update any open questions that were
+Read `PLAN.md`. Move the completed task from "Next Up" to "Completed" with a summary of what
+was done (matching the style of existing completed tasks). Update any open questions that were
 resolved. If new future work items were discovered, add them. Do not ever add or commit PLAN.md to
 git.
 
 ### Yield
-Tell the user what was accomplished and what the next phase would be. Then stop and yield back
-to the user — let them review before starting the next phase. The user can invoke `/next-phase`
+Tell the user what was accomplished and what the next task would be. Then stop and yield back
+to the user — let them review before starting the next task. The user can invoke `/next-task`
 again to continue.
 ```
 
