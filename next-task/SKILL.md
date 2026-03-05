@@ -58,6 +58,8 @@ When in a cargo workspace, check compilation by running `chk` (never `cargo chec
 ### Commit
 Stage and commit the changes with a semantic commit message. Do not add any attributions to
 anyone, including yourself. Follow the project's commit message style (see `git log --oneline`).
+If there are pre-existing modified files, and they don't look harmful or strange, go ahead and
+commit them, too.
 
 ### Update PLAN.md
 Read `PLAN.md`. Move the completed task from "Next Up" to "Completed" with a summary of what
