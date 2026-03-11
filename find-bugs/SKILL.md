@@ -74,14 +74,14 @@ Take the discovery sub-agent's output and pass it to a second sub-agent (subagen
 ### Step 4: Update PLAN.md
 
 Read `PLAN.md` again (it may have changed). For each surviving issue from the review sub-agent,
-add it as a bullet under the "Future Work" section. Use this format for each entry:
+add it as a bullet under the "Next up" section. Use this format for each entry:
 
 ```
 - **[category/severity] Title** — Explanation. (file:line)
 ```
 
-If `PLAN.md` doesn't exist, create it with "Completed", "Next Up", and "Future Work" sections,
-then add the items under "Future Work".
+If `PLAN.md` doesn't exist, create it with a top-level "Next Up" section then add the items under
+"Next Up.
 
 If no issues survived the review, tell the user that no actionable issues were found and do not
 modify `PLAN.md`.

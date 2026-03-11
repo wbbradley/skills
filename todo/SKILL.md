@@ -46,8 +46,8 @@ The sub-agent should return the drafted task text and any suggestions about exis
 ### Step 2: Add the task to PLAN.md
 
 Read the current `PLAN.md`. Insert the new task at the **top** of the "Next Up" section (first in
-the queue). If `PLAN.md` doesn't exist yet, create it with "Completed", "Next Up", and
-"Future Work" sections, and place the new task under "Next Up".
+the queue). If `PLAN.md` doesn't exist yet, create it with a top-level "Next Up" section, and place
+the new task under "Next Up".
 
 If the sub-agent suggested modifications to other existing tasks, present those suggestions to the
 user and only apply them with approval.
