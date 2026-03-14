@@ -38,20 +38,30 @@ The sub-agent should:
 
 The sub-agent should return the drafted task text and any suggestions about existing tasks.
 
-### Step 2: Add the task to PLAN.md
+### Step 2: Resolve open questions
 
-Read the current `PLAN.md`. Insert the new task at the **$QUEUE_POSITION** of the "Next Up" section.
-If `PLAN.md` doesn't exist yet, create it with a top-level "Next Up" section, and place the new task
-under "Next Up".
+If the sub-agent flagged any open questions or ambiguities, present them to the user as a numbered
+list before writing anything to `PLAN.md`. Ask the user to answer or dismiss each one. Wait for
+their response.
+
+Once the user responds, incorporate their answers into the drafted task — refine scope, adjust
+acceptance criteria, or add clarifying notes as appropriate. Drop any questions the user dismissed.
+
+If there are no open questions, skip straight to Step 3.
+
+### Step 3: Add the task to PLAN.md
+
+Read the current `PLAN.md`. Insert the finalized task at the **$QUEUE_POSITION** of the "Next Up"
+section. If `PLAN.md` doesn't exist yet, create it with a top-level "Next Up" section, and place
+the new task under "Next Up".
 
 If the sub-agent suggested modifications to other existing tasks, present those suggestions to the
 user and only apply them with approval.
 
-### Step 3: Retrospective
+### Step 4: Retrospective
 
 Tell the user:
 - What task was added and a brief summary of its scope.
 - How it fits into the larger plan — dependencies, synergies, or tensions with other tasks.
-- Any open questions or risks that surfaced during research.
 
 Then stop and yield to the user.
