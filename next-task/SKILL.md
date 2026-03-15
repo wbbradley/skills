@@ -15,13 +15,12 @@ after exiting plan mode, the remaining instructions come with it.
 
 ### Step 1: Determine what to work on
 
-Read `PLAN.md` at the project root. Identify the first incomplete task under "Next Up" (or, if
-all "Next Up" items are done, look at "Future Work"). Summarize the task to the user in 2-3
-sentences and confirm it's what they want to work on. If the user provides arguments via
-`$ARGUMENTS`, treat that as guidance on what to work on instead. If the "Next Up" and "Future Work"
-sections are empty, or don't exist, re-organize the PLAN.md as such. If the top item is large
-(likely to consume more than 120k tokens for an LLM), feel free to sequence it into smaller
-sub-tasks first, then proceed as per these instructions.
+Read `PLAN.md` at the project root. Identify the first incomplete task under "Next Up". Summarize
+the task to the user in 2-3 sentences and confirm it's what they want to work on. If the user
+provides arguments via `$ARGUMENTS`, treat that as guidance on what to work on instead. If the "Next
+Up" section is empty, or doesn't exist, re-organize the PLAN.md as such. If the top item is large
+(likely to consume more than 120k tokens for an LLM), please break it into smaller sub-tasks first,
+then proceed as per these instructions but on a unit of work that will fit.
 
 If the next step is ambiguous or there are open questions listed in PLAN.md that block this task,
 ask the user to resolve them before proceeding.
@@ -64,10 +63,10 @@ If there are pre-existing modified files, and they don't look harmful or strange
 commit them, too.
 
 ### Update PLAN.md
-Read `PLAN.md`. Move the completed task from "Next Up" to the file COMPLETED.md with a summary of
-what was done (matching the style of existing completed tasks if any exist). Update any open
-questions that were resolved. If new future work items were discovered, add them. Leftover compiler
-warnings count as future work items. Do not ever add or commit PLAN.md or COMPLETED.md to git.
+Read `PLAN.md`. Delete any completed tasks from "Next Up" and write a summary of that work into the
+file COMPLETED.md. If new future work items were discovered, add them. Leftover compiler warnings
+count as future work items unless they would naturally be handled by existing future work. Do not
+ever add or commit PLAN.md or COMPLETED.md to git.
 
 ### Yield
 Tell the user what was accomplished and what the next task would be. Then stop and yield back
