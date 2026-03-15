@@ -66,8 +66,8 @@ commit them, too.
 ### Update PLAN.md
 Read `PLAN.md`. Move the completed task from "Next Up" to the file COMPLETED.md with a summary of
 what was done (matching the style of existing completed tasks if any exist). Update any open
-questions that were resolved. If new future work items were discovered, add them. Do not ever add or
-commit PLAN.md or COMPLETED.md to git.
+questions that were resolved. If new future work items were discovered, add them. Leftover compiler
+warnings count as future work items. Do not ever add or commit PLAN.md or COMPLETED.md to git.
 
 ### Yield
 Tell the user what was accomplished and what the next task would be. Then stop and yield back
