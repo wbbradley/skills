@@ -16,7 +16,7 @@ The sub-agent should:
    underspecified, ask the user clarifying questions before proceeding — don't guess.
 
 2. **Explore the codebase and gather requirements.** Read relevant source files, tests, configs,
-   docs, or anything else needed to understand what this task would touch. Use web search if the
+   docs, or anything else needed to understand what this task should touch. Use web search if the
    request involves external APIs, libraries, or concepts that need research.
 
 3. **Check for overlap with existing tasks.** Review the full `PLAN.md` for duplication or
@@ -34,7 +34,8 @@ The sub-agent should:
 5. **Draft the new task.** Write a task entry that is concrete and actionable. It should make
    clear what files, modules, or systems are involved, what the expected behavior is, and what
    would need to be true for the task to be considered complete. Write it so that a competent
-   developer with access to the codebase — but no other context — could pick it up and execute.
+   developer and/or tech doc writer with access to the codebase — but no other context — could pick
+   it up and execute.
 
 The sub-agent should return the drafted task text and any suggestions about existing tasks.
 
