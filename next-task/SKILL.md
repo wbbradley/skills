@@ -15,7 +15,7 @@ after exiting plan mode, the remaining instructions come with it.
 
 ### Step 1: Determine what to work on
 
-Read `PLAN.md` at the project root. Identify the first incomplete task under "Next Up". Summarize
+Read PLAN.md at the project root. Identify the first incomplete task under "Next Up". Summarize
 the task to the user in 2-3 sentences and confirm it's what they want to work on. If the user
 provides arguments via `$ARGUMENTS`, treat that as guidance on what to work on instead. If the "Next
 Up" section is empty, or doesn't exist, re-organize the PLAN.md as such. If the top item is large
@@ -33,7 +33,8 @@ plan that:
 
 - Lists every file to create or modify
 - Includes key code snippets or signatures where helpful
-- Identifies test cases to add
+- Identifies test cases to add, and - when possible - prioritizes writing failing tests first, giving
+  concrete goals to achieve in fixing the tests. (TDD as appropriate)
 - Calls out risks or open questions discovered during exploration
 
 **Critical:** At the end of your plan document, include a section titled
