@@ -49,11 +49,11 @@ After the user approves this plan, execute these steps in order:
 ### Implement
 Execute the plan above. Work methodically — use task lists to track progress. Prefer editing
 existing files over creating new ones. Follow all project conventions from CLAUDE.md.
-When in a cargo workspace, check compilation by running `chk` (never `cargo check -p`).
+When in a cargo workspace, check compilation by running `chk` (never `cargo check ...` directly).
 
 ### Verify
 1. Run `chk` to ensure formatting and linting pass.
-2. Run `cargo test` (and any other relevant test commands).
+2. Run `cargo nextest run` (and any other relevant test commands).
 3. If tests fail, fix them before proceeding.
 4. If test coverage for the new work is insufficient, add tests.
 
