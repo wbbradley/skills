@@ -1,6 +1,7 @@
 ---
 name: list-tasks
 description: List remaining phases/tasks from PLAN.md as a concise numbered list.
+disable-model-invocation: true
 ---
 
 ## List Tasks Workflow

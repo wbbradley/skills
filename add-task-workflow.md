@@ -12,26 +12,28 @@ pass its contents (or a sufficient summary) as context to the sub-agent along wi
 
 The sub-agent should:
 
-1. **Understand the request.** Parse `$ARGUMENTS` for intent. If the request is ambiguous or
+1. Understand the request. Parse `$ARGUMENTS` for intent. If the request is ambiguous or
    underspecified, ask the user clarifying questions before proceeding — don't guess.
 
-2. **Explore the codebase and gather requirements.** Read relevant source files, tests, configs,
+2. Explore the codebase and gather requirements. Read relevant source files, tests, configs,
    docs, or anything else needed to understand what this task should touch. Use web search if the
    request involves external APIs, libraries, or concepts that need research.
 
-3. **Check for overlap with existing tasks.** Review the full `PLAN.md` for duplication or
+3. Check for overlap with existing tasks. Review the full `PLAN.md` for duplication or
    partial overlap. If the new work is already covered by an existing task, tell the user and
    suggest whether to merge, extend, or skip. If the new task would benefit from changes to
    other existing tasks, note those suggestions — but do **not** modify other tasks without
    explicit user approval.
 
-4. **Think big picture, then zoom in.** Consider how this feature fits into the broader project:
+4. Think big picture, then zoom in. Consider how this feature fits into the broader project:
    - Does it interact with or depend on other planned or completed work?
    - Are there inconsistencies, redundancies, or conflicts with the existing feature set?
    - What use-case scenarios does it enable? Are there edge cases worth calling out?
    - What risks or open questions should be flagged?
 
-5. **Draft the new task.** Write a task entry that is concrete and actionable. It should make
+5. Work back and forth with the user to ensure you are aligned with their goals and opinions.
+
+6. Draft the new task. Write a task entry that is concrete and actionable. It should make
    clear what files, modules, or systems are involved, what the expected behavior is, and what
    would need to be true for the task to be considered complete. Write it so that a competent
    developer and/or tech doc writer with access to the codebase — but no other context — could pick

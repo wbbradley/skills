@@ -1,7 +1,6 @@
 ---
 name: next-task
 description: Execute the next task/phase of the PLAN.md — plan, implement, test, commit, and update PLAN.md.
-disable-model-invocation: true
 ---
 
 ## Next Task Workflow
@@ -37,7 +36,7 @@ plan that:
   concrete goals to achieve in fixing the tests. (TDD as appropriate)
 - Calls out risks or open questions discovered during exploration
 
-**Critical:** At the end of your plan document, include a section titled
+Critical: At the end of your plan document, include a section titled
 `## Post-Plan Execution Steps` containing the following verbatim instructions so they survive
 the context transition:
 
@@ -63,11 +62,11 @@ anyone, including yourself. Follow the project's commit message style (see `git 
 If there are pre-existing modified files, and they don't look harmful or strange, go ahead and
 commit them, too.
 
-### Update PLAN.md
-Read `PLAN.md`. Delete any completed tasks from "Next Up" and write a summary of that work into the
-file COMPLETED.md. If new future work items were discovered, add them. Leftover compiler warnings
-count as future work items unless they would naturally be handled by existing future work. Do not
-ever add or commit PLAN.md or COMPLETED.md to git.
+### Update PLAN.md Read `PLAN.md`. Delete any completed tasks from "Next Up" and write a summary of
+that work into the file COMPLETED.md. If upcoming PLAN.md items need modifications due to a change
+during this plan's implementation then update those. If new future work items were discovered, add
+them. Leftover compiler warnings count as future work items unless they would naturally be handled
+by existing future work. Do not ever add or commit PLAN.md or COMPLETED.md to git.
 
 ### Yield
 Tell the user what was accomplished and what the next task would be. Then stop and yield back
