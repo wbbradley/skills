@@ -24,11 +24,15 @@ commit them, too.
 
 ### Update PLAN.md
 
-Read `PLAN.md`. Delete any completed tasks from "Next Up" and write a summary of that work into
-the file COMPLETED.md. If upcoming PLAN.md items need modifications due to a change during this
-plan's implementation then update those. If new future work items were discovered, add them.
-Leftover compiler warnings count as future work items unless they would naturally be handled by
-existing future work. Do not ever add or commit PLAN.md or COMPLETED.md to git.
+Read `PLAN.md`. **Remove** the completed task entirely from the "Next Up" section — do not leave
+it in place with a [DONE] tag, strikethrough, or any other marker. The task and its
+`### Implementation Plan` subsection should no longer appear in PLAN.md at all. Then append a
+brief summary of the completed work to `COMPLETED.md`.
+
+If upcoming PLAN.md items need modifications due to a change during this plan's implementation
+then update those. If new future work items were discovered, add them. Leftover compiler warnings
+count as future work items unless they would naturally be handled by existing future work.
+Do not ever add or commit PLAN.md or COMPLETED.md to git.
 
 ### Yield
 
